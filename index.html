@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tally Counter</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- import shoelace -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/shoelace-autoloader.js"
+    ></script>
+    <!-- import css/scripts -->
+    <link rel="stylesheet" href="src/stylesheet.css" />
+    <script src="src/scripts.js" async defer type="module"></script>
+  </head>
+  <body class="grey darken-3">
+    <header data-header class="header blue">
+      <h1 class="teal-text text-lighten-5">Tally Count</h1>
+    </header>
+
+    <main>
+      <div class="counter container center-align">
+        <h1 data-counter class="blue-text">0</h1>
+      </div>
+
+      <div data-controls class="container center-align">
+        <sl-button data-minus size="large" variant="primary">-1</sl-button>
+        <sl-button data-reset size="large" variant="primary">RESET</sl-button>
+        <sl-button data-plus size="large" variant="primary">+1</sl-button>
+      </div>
+
+      <div class="alert-duration flex">
+        <sl-alert data-alert variant="primary" duration="2000">
+          <sl-icon slot="icon" name="info-circle"></sl-icon>
+          Counter has been RESET.
+        </sl-alert>
+      </div>
+    </main>
+
+    <footer data-footer class="page-footer blue center-align">
+      <h6>A Javascript Tally Counter.</h6>
+    </footer>
+  </body>
+</html>
