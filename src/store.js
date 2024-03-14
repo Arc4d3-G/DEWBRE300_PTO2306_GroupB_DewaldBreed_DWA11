@@ -1,3 +1,4 @@
+import { getState } from './actions.js';
 const initialState = {
   count: 0,
 };

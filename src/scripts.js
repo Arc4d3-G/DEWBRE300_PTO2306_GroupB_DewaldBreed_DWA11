@@ -5,7 +5,6 @@ const plusBtn = document.querySelector('[data-plus]');
 const minusBtn = document.querySelector('[data-minus]');
 const resetBtn = document.querySelector('[data-reset]');
 const counter = document.querySelector('[data-counter]');
-const alert = document.querySelector('[data-alert]');
 
 const addHandler = () => {
   update(increase);
@@ -25,5 +24,21 @@ const resetHandler = () => {
 };
 resetBtn.addEventListener('click', resetHandler);
 
-const handler = (prev, next) => console.log('Previous state:', prev, 'Current state:', next);
-subscribe(handler);
+// const handler = (prev, next) => console.log('Previous state:', prev, 'Current state:', next);
+// subscribe(handler);
+
+//Gerkhin Scenario for challenge
+console.log(getState());
+
+update(increase);
+update(increase);
+
+console.log(getState());
+
+update(decrease);
+
+console.log(getState());
+
+update(reset);
+
+console.log(getState());

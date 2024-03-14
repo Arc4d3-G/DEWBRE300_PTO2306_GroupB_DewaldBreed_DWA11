@@ -1,3 +1,4 @@
+import { states } from './store.js';
 export const increase = (state) => {
   return {
     ...state,
@@ -19,6 +20,6 @@ export const reset = (state) => {
   };
 };
 
-export const getState = (state, key) => {
-  return state[key];
+export const getState = () => {
+  return states[0];
 };
